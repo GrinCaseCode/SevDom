@@ -147,6 +147,51 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		]
 	});
 
+	$('.slider-for').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+	});
+
+	$('.slider-nav').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		 verticalSwiping: true,
+		 vertical: true,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		 focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				verticalSwiping: false,
+		 vertical: false,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				verticalSwiping: false,
+		 vertical: false,
+			}
+		}
+		]
+	});
+
 	$(".footer__title").click(function() {
 		$(this).toggleClass("active");
 		$(this).siblings(".footer__content").slideToggle(200);
@@ -160,6 +205,15 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(".tab-pane").removeClass("active");
 		var selectTab = $(this).attr("href");
 		$(selectTab).addClass("active");
+	}); 
+
+	$('.tabs-card li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-card").fadeOut(0);
+		var selectTab2 = $(this).attr("href");
+		$(selectTab2).fadeIn(200);
 	});
 	$(".input-phone").mask("+7 (999) 999-99-99");
 

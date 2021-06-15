@@ -1,5 +1,15 @@
 /*==========  Desktop First Method  ==========*/
-
+@media only screen and (max-width : 1390px) {
+	.slider-for {
+		margin-left: -40px;
+	}
+	.header_page .header-middle .category-header {
+		margin-right: 5px;
+	}
+	.header_page .header-middle .header-categories {
+		margin-left: 5px;
+	}
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.header__contact:nth-child(2) {
@@ -37,8 +47,468 @@
 	.item-step {
 		margin-bottom: 60px;
 	}
+	.slider-for {
+		margin-left: 0;
+	}
+	.card-feature {
+		max-width: 400px;
+	}
+	.features-card {
+		padding-top: 15px;
+	}
+	.header_page .header-middle .header-categories {
+		flex-wrap: wrap;
+	}
+	.header_page .header-middle .category-header {
+		flex: 1;
+		font-size: 12px;
+		margin: 2px;
+		height: 31px;
+	}
 }
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.advantages-head__image,
+	.billbord .romb,
+	.header__center,
+	.header-top {
+		display: none;
+	}
+	.billbord {
+		padding-top: 50px;
+		padding-bottom: 35px;
+		min-height: initial;
+	}
+	.tabs {
+		margin-top: 25px;
+	}
+	.advantages-head {
+		margin-bottom: 20px;
+	}
+	.title-section {
+		font-size: 32px;
+		line-height: 41px;
+	}
+	.steps .title-section {
+		padding-bottom: 40px;
+	}
+	.block-form {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.steps .block-form {
+		margin-bottom: 30px;
+	}
+	.item-step {
+		margin-bottom: 35px;
+		font-size: 13px;
+	}
+	.item-step .icon-step {
+		margin-right: 13px;
+	}
+	.partners {
+		padding-bottom: 45px;
+	}
+	.footer__content {
+		display: none;
+	}
+	.footer__title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 14px;
+		padding: 15px 0;
+		margin: 0;
+		border-bottom: 1px solid #fff;
+	}
+	.footer__bottom {
+		border: none;
+	}
+	.col_copyright {
+		text-align: right;
+	}
+	.footer__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.footer .logo-descr {
+		margin-left: 15px;
+		margin-top: 0;
+	}
+	.footer__title i  {
+		display: inline-block;
+		transition: all 0.3s;
+	}
+	.footer__title.active i {
+		transform: rotate(45deg);
+	}
+	.footer__nav li {
+		margin-bottom: 14px;
+	}
+	.footer__content {
+		padding-top: 15px;
+	}
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+		background-color: #fff;
+	}
+	.wrapper {
+		padding-top: 73px;
+	}
+	.btn_nav {
+		display: inline-block;
+	}
+	.menu-mobile {
+		padding: 0 15px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		overflow: auto;
+		display: none;
+		padding-bottom: 100px;
+	}
+	.header__contact {
+		font-size: 14px;
+		margin-top: 15px;
+	}
+	.menu-mobile .list-social a {
+		color: #3d444e;
+	}
+	.menu-mobile .list-social {
+		margin-top: 15px;
+	}
+	.menu-mobile .header-categories {
+		position: relative;
+		top: 0;
+		left: 0;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.menu-mobile .category-header {
+		width: 49%;
+		font-size: 13px;
+		min-width: initial;
+		margin: 0;
+		margin-bottom: 6px;
+		box-shadow: 0px 3px 10px 0px rgb(177 178 178 / 40%);
+	}
+	.menu-mobile .menu {
+		padding: 0;
+		display: block;
+	}
+	.menu-mobile .menu a {
+		color: #3d444e;
+		padding: 10px 0;
+		border-bottom: 1px solid #3d444e;
+		display: block;
+	}
+	.slider-nav {
+		max-width: 100%;
+		padding: 0;
+	}
+	.slider-nav__image {
+		margin: 10px 10px;
+	}
+	.col_for {
+		order: -1;
+	}
+	.slider-for {
+		max-width: 100%;
+	}
+	.slider-for__image {
+		height: 400px;
+	}
+	.card-feature {
+		max-width: 520px;
+	}
+	.tabs-card {
+		margin-top: 30px;
+	}
+	.slider-nav .slick-arrow {
+		transform: none;
+		left: -15px;
+		margin: 0;
+		top: 50%;
+		margin-top: -20px;
+	}
+	.slider-nav .slick-next {
+		right: -15px;
+		left: auto;
+	}
+	.card__price {
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	.card__right {
+		padding-left: 15px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.header__right {
+		display: none;
+	}
+	.billbord__title {
+		font-size: 25px;
+		line-height: 36px;
+	}
+	.billbord__title strong {
+		font-size: 25px;
+	}
+	.billbord__list li {
+		margin-top: 25px;
+	}
+	.btn-main {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.tabs a {
+		font-size: 14px;
+		height: 140px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		box-shadow: 0px 4px 10px 0px rgb(177 178 178 / 40%);
+	}
+	.tabs li {
+		flex: 1;
+	}
+	.tabs__image {
+		margin-top: auto;
+		height: 90px;
+	}
+	.item-catalog__image {
+		height: 215px;
+	}
+	.item-catalog {
+		padding: 15px;
+		padding-bottom: 0;
+	}
+	.item-catalog__name {
+		font-size: 15px;
+		line-height: 23px;
+		margin-bottom: 5px;
+	}
+	.item-catalog__price {
+		font-size: 17px;
+		line-height: 1.2;
+		margin: 0 -15px;
+		padding: 12px 15px;
+	}
+	.slider-catalog .item-catalog {
+		margin: 0 5px;
+	}
+	.slider-catalog {
+		margin: 0 -15px;
+	}
+	.title-middle {
+		font-size: 22px;
+	}
+	.descr-section {
+		font-size: 14px;
+	}
+	.romb {
+		width: 170px;
+		height: 205px;
+	}
+	.romb b {
+		font-size: 17px;
+	}
+	.romb strong {
+		font-size: 24px;
+		line-height: 35px;
+	}
+	.advantages-head .romb {
+		padding: 0 40px;
+	}
+	.advantages {
+		padding-top: 25px;
+	}
+	.row_advantages > div {
+		margin-bottom: 20px;
+	}
+	.title-section {
+		font-size: 25px;
+		line-height: 37px;
+	}
+	.steps {
+		padding-top: 35px;
+	}
+	.item-step {
+		max-width: 100%;
+		margin-bottom: 25px;
+		font-size: 14px;
+	}
+	.reviews {
+		padding-top: 35px;
+	}
+	.item-review__content {
+		padding: 30px 20px;
+	}
+	.slider-partners,
+	.slider-reviews {
+		padding-bottom: 20px;
+	}
+	.partners {
+		padding-top: 35px;
+	}
+	.slider-partners {
+		margin-top: 15px;
+	}
+	.slider-catalog {
+		padding-bottom: 20px;
+		margin-bottom: 15px;
+	}
+	.footer__bottom {
+		text-align: center;
+	}
+	.footer__bottom .align_right {
+		text-align: center;
+	}
+	.footer__bottom .row > div {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	.card-feature {
+    max-width: 450px;
+}
+.tab-container-card {
+	padding-top: 20px;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.header .logo-descr {
+		display: none;
+	}
+	.billbord {
+		padding-top: 35px;
+	}
+	.billbord__title {
+		font-size: 21px;
+		line-height: 30px;
+		padding-bottom: 15px;
+	}
+	.billbord__title strong {
+		font-size: 22px;
+	}
+	.billbord__descr {
+		font-size: 14px;
+		padding-bottom: 20px;
+	}
+	.billbord__list {
+		display: none;
+	}
+	.form-phone {
+		display: block;
+	}
+	.form-phone .item-form {
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	.form-phone .btn-main {
+		width: 100%;
+	}
+	.tabs li {
+		flex: initial;
+		margin: 0;
+		width: 50%;
+		padding: 0 5px;
+		margin-bottom: 15px;
+	}
+	.tabs {
+		margin: 0 -5px;
+		margin-top: 20px;
+		flex-wrap: wrap;
+	}
+	.advantages-head {
+		display: block;
+	}
+	.advantages-head .romb {
+		margin-bottom: 15px;
+	}
+	.item-advantage__name {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+	.block-form {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.title-section {
+		font-size: 21px;
+		line-height: 29px;
+	}
+	.block-form__title {
+		font-size: 20px;
+	}
+	.block-form__descr {
+		font-size: 16px;
+	}
+	.item-step {
+		margin-bottom: 15px;
+	}
+	.item-step p {
+		margin-top: 5px;
+	}
+	.item-review__name {
+		font-size: 16px;
+	}
+	.item-review__head {
+		display: block;
+	}
+	.item-review__left {
+		margin-bottom: 10px;
+	}
+	.slider-reviews {
+		margin-top: 0;
+	}
+	.item-review__content {
+		padding: 20px 15px;
+	}
+	.reviews {
+		padding-bottom: 35px;
+	}
+	.romb {
+		width: 158px;
+		height: 181px;
+	}
+	.advantages-head .romb {
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.slider-for__image {
+    height: 315px;
+}
+.slider-nav__image {
+	height: 100px;
+}
+.card .title-middle {
+	padding-bottom: 15px;
+}
+.card-feature {
+    max-width: 93vw;
+    font-size: 12px;
+}
+.card__price {
+	font-size: 25px;
+}
+.tabs-card li {
+    margin-right: 42px;
+}
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
