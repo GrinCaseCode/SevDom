@@ -385,6 +385,9 @@
 .tab-container-card {
 	padding-top: 20px;
 }
+.slider-catalog {
+	margin: 0 -5px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -507,6 +510,9 @@
 }
 .tabs-card li {
     margin-right: 42px;
+}
+.advantages .title-middle strong {
+	display: block;
 }
 }
 
