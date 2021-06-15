@@ -365,6 +365,7 @@
 		margin-top: 15px;
 	}
 	.slider-catalog {
+			margin: 0 -5px;
 		padding-bottom: 20px;
 		margin-bottom: 15px;
 	}
@@ -384,9 +385,6 @@
 }
 .tab-container-card {
 	padding-top: 20px;
-}
-.slider-catalog {
-	margin: 0 -5px;
 }
 }
 
