@@ -18,6 +18,10 @@
 .item-category__content {
 	padding-top: 15px;
 }
+#map {
+	width: 490px;
+	margin-left: -40px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -92,6 +96,15 @@
 }
 .col-lg-6 .col-lg-7 .item-category {
     min-height: 160px;
+}
+.contacts .block-form {
+    width: 315px;
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+    #map {
+    width: 345px;
+    margin-left: -18px;
 }
 }
 
@@ -302,6 +315,18 @@
 	.categories {
 		padding-bottom: 40px;
 	}
+	#map {
+		width: 100%;
+		margin: 0;
+	}
+	.contacts .block-form {
+		float: none;
+		width: 400px;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -463,6 +488,20 @@
 	border-top-right-radius: 20px !important;
 	border-top-left-radius: 20px !important;
 }
+.contacts__item {
+    margin-bottom: 23px;
+    max-width: 100%;
+}
+.contacts {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.contacts .block-form {
+	margin-top: 30px;
+}
+#map {
+	height: 300px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -611,6 +650,15 @@
 }
 .categories {
 	padding-bottom: 20px;
+}
+.contacts__item {
+	margin-bottom: 17px;
+}
+.contacts .block-form {
+	max-width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	min-height: initial;
 }
 }
 
