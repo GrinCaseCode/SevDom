@@ -660,6 +660,11 @@
 	padding-right: 15px;
 	min-height: initial;
 }
+.catalog-sorting .jqselect,
+.catalog-sorting .jq-selectbox__select,
+.catalog-sorting .jq-selectbox__select-text {
+	display: inline-block !important;
+}
 }
 
 /* Custom, iPhone Retina */
