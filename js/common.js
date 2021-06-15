@@ -215,6 +215,20 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		var selectTab2 = $(this).attr("href");
 		$(selectTab2).fadeIn(200);
 	});
+
+
+	$('.item-filter__head').click(function(event) {
+		event.preventDefault();
+		$(this).parent().toggleClass("active");
+		$(this).siblings(".item-filter__content").slideToggle(200);
+	}); 
+
+
+$(".btn-filter").click(function(e) {
+	e.preventDefault();
+		$(".sidebar-catalog").slideToggle(200);
+	});
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
