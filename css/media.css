@@ -491,6 +491,7 @@
 	.advantages-head .romb {
 		margin: 0 auto;
 		margin-bottom: 15px;
+		align-items: center;
 	}
 	.slider-for__image {
     height: 315px;
