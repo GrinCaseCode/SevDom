@@ -22,6 +22,12 @@
 	width: 490px;
 	margin-left: -40px;
 }
+.portfolio .tab-container {
+    margin-left: -25px;
+}
+.item-portfolio__image {
+    width: 345px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -106,6 +112,24 @@
     width: 345px;
     margin-left: -18px;
 }
+.portfolio .tabs a {
+    width: 118px;
+    height: 160px;
+    }
+    .portfolio .tabs__image {
+    	height: 115px;
+    }
+    .item-portfolio {
+    	display: block;
+    }
+    .item-portfolio__image {
+    	width: 100%;
+    	height: 320px;
+    }
+    .header_page .header-middle .header-categories {
+    	padding-left: 20px;
+    	padding-right: 20px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -327,6 +351,34 @@
 		margin: 0 auto;
 		margin-top: 20px;
 	}
+	.portfolio .tabs__image {
+		height: 150px;
+	}
+	.portfolio .tabs a {
+		    width: 150px;
+    height: 180px;
+	}
+	.item-portfolio {
+		display: flex;
+	}
+	.item-portfolio__image {
+		width: 345px;
+	}
+	.item-portfolio__name {
+    font-size: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+}
+.item-portfolio__content {
+    padding: 10px 15px;
+    padding-top: 10px;
+}
+.portfolio .title-section {
+	padding-bottom: 0;
+}
+.portfolio .tab-container {
+	margin-left: 0;
+}
 }
 
 /* Small Devices, Tablets */
@@ -502,6 +554,33 @@
 #map {
 	height: 300px;
 }
+.portfolio .tabs {
+	flex-wrap: initial;
+}
+.portfolio .tabs a {
+	width: 100%;
+	    height: 140px;
+}
+.portfolio .tabs__image {
+	height: 90px;
+}
+.portfolio {
+	padding-top: 30px;
+}
+.item-portfolio {
+	display: block;
+}
+.item-portfolio__image {
+    width: 100%;
+    height: 320px;
+}
+.item-portfolio__content {
+	padding-top: 20px;
+}
+.item-portfolio__content {
+	padding-left: 0;
+	padding-right: 0;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -665,6 +744,19 @@
 .catalog-sorting .jq-selectbox__select-text {
 	display: inline-block !important;
 }
+.portfolio .tabs {
+	flex-wrap: wrap;
+}
+.portfolio .tabs li {
+	margin-bottom: 15px;
+}
+.item-portfolio__image {
+	height: 220px;
+} 
+.item-portfolio {
+	padding: 15px;
+	margin-bottom: 25px;
+}
 }
 
 /* Custom, iPhone Retina */
@@ -692,6 +784,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+	.sidebar-catalog,
 	.footer__content {
 		display: block !important;
 	}

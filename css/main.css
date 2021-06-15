@@ -1424,3 +1424,102 @@ select {
 .text-page {
 	padding-top: 30px;
 }
+.item-category {
+	display: flex;
+	min-height: 100%;
+	justify-content: space-between;
+	background-color: #ffffff;
+	box-shadow: 0px 15px 20px 0px rgba(177,178,178,0.4);
+	border-radius: 20px;
+}
+.item-category__content {
+	padding: 24px 25px;
+	padding-right: 15px;
+	padding-bottom: 3px;
+}
+.item-category a {
+	color: #3d444e;
+}
+.item-category__title {
+	font-size: 24px;
+	padding-bottom: 15px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #3d444e;
+}
+.item-category__name {
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 7px;
+	position: relative;
+	display: inline-block;
+}
+.item-category__name::before {
+	position: absolute;
+	content: "•";
+	right: 100%;
+	top: 0px;
+	color: #1d8dcc;
+	margin-right: 7px;
+}
+.item-category a {
+	color: #051923;
+	transition: all 0.3s;
+}
+.item-category li {
+	margin-bottom: 7px;
+}
+.item-category li a {
+	border-bottom: 1px solid transparent;
+}
+.item-category li a:hover {
+	border-color: #051923;
+}
+.item-category__image {
+	width: 65%;
+	flex: none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.item-category__image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.col-lg-5 .item-category {
+	flex-direction: column-reverse;
+}
+.col-lg-5 .item-category__image {
+	height: 190px;
+	width: 100%;
+		border-radius: 0;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.col-lg-5 .item-category__image img {
+	border-radius: 0;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.col-lg-6 > .item-category .item-category__content {
+	padding-left: 35px;
+}
+.col-lg-6 .col-lg-7 .item-category__image {
+	width: 49%;
+}
+.col-lg-6 .col-lg-7 .item-category {
+	min-height: 166px;
+}
+.col-lg-6 .col-lg-7 .item-category {
+	margin-bottom: 28px;
+}
+.col-lg-6 .col-lg-7 .item-category:last-child {
+	margin-bottom: 0;
+}
