@@ -28,6 +28,19 @@
 .item-portfolio__image {
     width: 345px;
 }
+.about .row_team .title-page {
+	padding-top: 0;
+}
+.about-block .item-step {
+	margin: 20px 0;
+}
+.about-block__title {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.about-block {
+	font-size: 15px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -379,6 +392,22 @@
 .portfolio .tab-container {
 	margin-left: 0;
 }
+.about-block .col_pr {
+	padding-right: 15px;
+}
+.about-block {
+	padding-left: 20px;
+}
+.about-block__image img {
+	float: none;
+	margin-top: 15px;
+}
+.about .row_team .title-page {
+	margin-top: 25px;
+}
+.about .title-section {
+	padding-bottom: 25px;
+}
 }
 
 /* Small Devices, Tablets */
@@ -581,6 +610,42 @@
 	padding-left: 0;
 	padding-right: 0;
 }
+.menu-mobile__contacts {
+	display: block;
+	margin-top: 10px;
+}
+.article h1 {
+	font-size: 24px;
+}
+.article__image {
+	margin-bottom: 15px;
+}
+.article h2 {
+    font-size: 18px;
+    }
+    .article blockquote {
+    	padding: 30px;
+    }
+    .article .col-lg-8 li, .article p {
+    	margin-bottom: 15px;
+    }
+    .about {
+    	padding-top: 30px;
+    }
+    .about-block .item-step {
+    font-size: 15px;
+    line-height: 1.4;
+}
+.about .title-page {
+    padding-top: 30px;
+}
+.title-page {
+    font-size: 29px;
+    line-height: 39px;
+}
+.about .row_team .title-page {
+	margin-top: 0;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -757,6 +822,101 @@
 	padding: 15px;
 	margin-bottom: 25px;
 }
+.item-news__image {
+    height: 187px;
+    }
+    .item-news__content {
+    	padding: 15px 15px;
+    }
+    .item-news__name {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.item-news__date {
+    margin-bottom: 9px;
+    }
+    .item-news__date::after {
+    	right: -15px;
+    }
+    .row_news > div {
+    	margin-top: 20px;
+    }
+    .row_news {
+    	padding-bottom: 0;
+    }
+    .modal-wrap .block-form {
+    	padding: 40px 15px;
+    }
+    .article .col-lg-8 img {
+    	border-radius: 15px;
+    }
+    .article h1 {
+    font-size: 21px;
+}
+.nav-article {
+	font-size: 14px;
+	padding: 15px 0;
+	margin: 15px 0;
+}
+.article h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.article blockquote {
+	padding: 25px 15px;
+	font-size: 14px;
+}
+.about-block__title {
+    font-size: 16px;
+    }
+    .about-block {
+    font-size: 14px;
+}
+.about-block .icon-step {
+    width: 73px;
+    height: 93px;
+    font-size: 19px;
+    }
+    .about-block .item-step {
+    font-size: 13px;
+}
+.title-page {
+    font-size: 26px;
+    line-height: 33px;
+}
+.row_team > div {
+	margin-top: 20px;
+}
+.item-team__name {
+    font-size: 16px;
+    margin-bottom: 3px;
+    }
+    .item-team__image {
+    height: 240px;
+    margin-bottom: 15px;
+}
+.row_team ul li {
+	margin-top: 15px;
+}
+.row_team ul {
+    font-size: 14px;
+    }
+    .about {
+    	padding-bottom: 35px;
+    }
+    .payment {
+    	padding-top: 35px;
+    	padding-bottom: 50px;
+    }
+    .row_payment > div {
+    margin-top: 20px;
+}
+.reviews-page {
+    padding-top: 25px;
+    }
+    .row_reviews {
+    	margin-top: -10px;
+    }
 }
 
 /* Custom, iPhone Retina */
