@@ -112,77 +112,60 @@
 			</div>
 		</header>
 
-		<div class="categories">
+		<div class="contacts">
 			<div class="container">
-				<div class="row row_categories">
-					<div class="col-lg-6">
-						<div class="item-category">
-							<div class="item-category__content">
-								<div class="item-category__title">Двери</div>
-								<ul>
-									<li><a href="#">Elporta</a></li>
-									<li><a href="#">Двери регионов</a></li>
-									<li><a href="#">Другие</a></li>
-								</ul>
-								<a href="#" class="item-filter__name">Межкомнатные</a>
-								<ul>
-									<li><a href="#">Uberture</a></li>
-									<li><a href="#">Оникс</a></li>
-									<li><a href="#">ВФД</a></li>
-									<li><a href="#">Новый стиль</a></li>
-								</ul>
-								<a href="#" class="item-filter__name">Дверная фурнитура</a>
-							</div>
-							<div class="item-category__image">
-								<img src="img/category1.jpg" alt="alt">
-							</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-4">
+						<div class="title-section">Контакты</div>
+						<div class="contacts__item">
+							<p><strong>г. Севастополь, рынок Соловьи,</strong></p>
+							<p>ул. Соловьева 12, ост. Авангард</p>
+							<p>(со стороны Токарева)</p>
+						</div>
+						<div class="contacts__item">
+							<a href="tel:+79782293220" class="phone-main">+7 978 229 32 20</a>
+							<ul class="list-social">
+								<li><a href="#"><i class="fab fa-whatsapp"></i>Whats App</a></li>
+								<li><a href="#"><i class="fab fa-viber"></i>Viber</a></li>
+							</ul>
+						</div>
+						<div class="contacts__item">
+							<p><strong>График работы: </strong></p>
+							<p>пн - пт: с 9:00 - 17:30</p>
+							<p>сб - вс: с 9:00 - 17:00</p>
+						</div>
+						<div class="contacts__item">
+							<p><strong>Электронный адрес:</strong></p>
+							<p><a href="mailto:sev_dveri@mail.ru">sev_dveri@mail.ru</a></p>
 						</div>
 					</div>
-					<div class="col-lg-6">
-						<div class="row">
-							<div class="col-lg-7 col-md-6">
-								<div class="item-category">
-									<div class="item-category__content">
-										<div class="item-category__title">Окна</div>
-										<ul>
-											<li><a href="#">Veka</a></li>
-											<li><a href="#">Elex</a></li>
-											<li><a href="#">Grunbau</a></li>
-										</ul>
-									</div>
-									<div class="item-category__image">
-										<img src="img/category2.jpg" alt="alt">
+					<div class="col-lg-6 col-md-8">
+						<div id="map"></div>
+					</div>
+					<div class="col-lg-3">
+						<div class="block-form">
+							<div class="block-form__title">Обратная связь</div>
+							<div class="block-form__text">Напишите нам мы проконсультируем Вас по интересующим вопросам</div>
+							<form>
+								<div class="item-form">
+									<input type="text" placeholder="Имя" required="required">
+								</div>
+								<div class="item-form">
+									<input type="text" placeholder="+7 (___) ___-__-__" class="input-phone" required="required">
+								</div>
+								<div class="item-form">
+									<textarea placeholder="Сообщение" required="required"></textarea>
+								</div>
+								<input type="submit" class="btn-main" value="Отправить">
+								<div class="checkbox-wrap">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" required="required" checked="checked" />
+											<span>Согласие на обработку персональных данных</span>
+										</label>
 									</div>
 								</div>
-								<div class="item-category">
-									<div class="item-category__content">
-										<div class="item-category__title">Ламинат</div>
-										<ul>
-											<li><a href="#">Classen</a></li>
-											<li><a href="#">Таркетт</a></li>
-											<li><a href="#">Kastamonu Floorpan</a></li>
-										</ul>
-									</div>
-									<div class="item-category__image">
-										<img src="img/category3.jpg" alt="alt">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-5 col-md-6">
-								<div class="item-category">
-									<div class="item-category__content">
-										<div class="item-category__title">Лепной декор</div>
-										<ul>
-											<li><a href="#">Багеты</a></li>
-											<li><a href="#">Плинтусы</a></li>
-											<li><a href="#">Молдинги</a></li>
-										</ul>
-									</div>
-									<div class="item-category__image">
-										<img src="img/category4.jpg" alt="alt">
-									</div>
-								</div>
-							</div>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -311,6 +294,39 @@
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
 <script src="js/common.js?ver=1.7"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+	$(document).ready(function() {
+		ymaps.ready(init);
+
+		function init() {
+			var myMap = new ymaps.Map('map', {
+				center: [44.581381, 33.507349],
+				zoom: 15
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+
+
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: '<p class="text-map">ул. Соловьева 12</p>'
+			}, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/pin.svg',
+            hideIconOnBalloonOpen: false,
+            iconImageSize: [25, 30],
+            balloonOffset: [ 2, -40]
+        });
+			myMap.controls.remove('searchControl');
+			myMap.behaviors.disable('scrollZoom');
+
+			myMap.geoObjects.add(myPlacemark);
+		}
+	});
+</script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
