@@ -19,7 +19,9 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 }
 
 	//плавный скролл
-	$(".nav-article li a").mPageScroll2id();
+	$(".nav-article li a").mPageScroll2id({
+		offset: 70
+	});
 
 
 	//кнопка sandwich
