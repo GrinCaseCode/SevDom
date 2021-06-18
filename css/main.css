@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
 }
 .wrapper {
+	padding-top: 107px;
 	overflow: hidden;
 }
 a {
@@ -65,6 +66,18 @@ img {
 p {
 	padding: 0;
 	margin: 0;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: #fff;
+	transition: all 0.3s;
+}
+.header.fixed .header-middle .header__contact {
+	display: none;
 }
 .header-top {
 	padding: 5px 0;
@@ -1072,16 +1085,19 @@ p {
 	padding-bottom: 50px;
 	background-color: #f7f7f7;
 }
+.header.fixed .header-middle .header-categories,
 .header_page .header-middle .header-categories {
 	position: relative;
 	margin-top: 0;
 	margin-left: 40px;
 	top: 0;
 }
+.header.fixed .header-middle .category-header,
 .header_page .header-middle .category-header {
 	min-width: 148px;
 	box-shadow: 0px 7px 10px 0px rgba(177,178,178,0.4);
 }
+.header.fixed .header-middle .category-header:hover,
 .header_page .header-middle .category-header:hover {
 	box-shadow: 0px 7px 10px 0px rgba(177,178,178,0.7);	
 }

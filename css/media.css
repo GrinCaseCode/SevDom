@@ -3,9 +3,11 @@
 	.slider-for {
 		margin-left: -40px;
 	}
+	.header.fixed .header-middle .category-header,
 	.header_page .header-middle .category-header {
 		margin-right: 5px;
 	}
+	.header.fixed .header-middle .header-categories,
 	.header_page .header-middle .header-categories {
 		margin-left: 5px;
 	}
@@ -90,9 +92,11 @@
 	.features-card {
 		padding-top: 15px;
 	}
+	.header.fixed .header-middle .header-categories,
 	.header_page .header-middle .header-categories {
 		flex-wrap: wrap;
 	}
+	.header.fixed .header-middle .category-header,
 	.header_page .header-middle .category-header {
 		flex: 1;
 		font-size: 12px;
